@@ -32,8 +32,9 @@ The app gives each user following parameters to choose:
 '''
 )
 
-df = pd.read_csv('https://github.com/jlee7x/DE_App_Project/blob/main/Final_Project_Data.csv',sep='delimiter')
-df = df.drop(columns=['month'])
+col_names = ["none", "year", "month", "state", "city_or_county", "n_killed", "n_injured", "latitude", "longitude"]
+df = pd.read_csv('https://github.com/jlee7x/DE_App_Project/blob/main/Final_Project_Data.csv',names=col_names)
+df = df.drop(columns=['none','month'])
 
 # Parameter Selection Section
 st.write("## Parameter Selector")
