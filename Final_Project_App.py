@@ -34,7 +34,7 @@ The app gives each user following parameters to choose:
 
 df = pd.read_csv('https://raw.githubusercontent.com/jlee7x/DE_App_Project/main/Final_Project_Data.csv')
 df = df.drop(columns=['Unnamed: 0','month'])
-st.dataframe(df)
+#st.dataframe(df)
 
 # Parameter Selection Section
 st.write("## Parameter Selector")
